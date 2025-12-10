@@ -161,7 +161,7 @@ const LandingPage = () => {
         </section>
         <section className={styles.section4}>
           <p className={styles.p11}>How It works</p>
-          <h2>Get Started In Minutes</h2>
+          <h1>Get Started In Minutes</h1>
             <div className={styles.section41}>
             {[
               { step: '01', title: 'Create Account', description: 'Sign up and choose your role as importer, exporter, or carrier.' },
@@ -176,7 +176,7 @@ const LandingPage = () => {
                   <span className={styles.step}>{item.step}</span>
                 </div>
                 <h3>{item.title}</h3>
-                <p>{item.description}</p>
+                <p className={styles.p12}>{item.description}</p>
               </div>
             ))}
           </div>
