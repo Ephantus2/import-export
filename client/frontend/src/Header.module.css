@@ -1,0 +1,95 @@
+:root{
+    --deep-navy: rgb(27, 44, 78);
+    --light-navy: rgb(30, 91, 121);
+    --linear-gradient: linear-gradient(135deg, #1E40AF, #3B82F6);
+    --linear-gradient2: linear-gradient(135deg, rgb(27, 44, 78), rgb(30, 91, 121));
+    --teal-accent: rgb(19, 194, 194);
+    --muted-teal: rgb(19, 194, 194, 0.3);
+    --orange-teal: 	
+rgb(255, 153, 0);
+  --sky-blue: rgb(59, 130, 246);
+  --gray-border: rgb(209, 213, 219);
+  --light-gray-bg: rgb(249, 250, 251);
+  --white: rgb(255, 255, 255);
+  --dark-charcoal: rgb(17, 24, 39);
+  --medium-gray: rgb(107, 114, 128);
+}
+
+.shipIcon{
+    background: var(--linear-gradient2);
+    padding: 10px;
+    width: 3rem;
+    height: 3rem;
+    color: var(--white);
+    border-radius: 10px;
+}
+
+.button1{
+    border: none;
+    background-color: transparent;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 1rem;
+    margin: 0 10px;
+    transition: background-color 0.3s ease;
+}
+
+.button1:hover{
+    background-color: var(--muted-teal);
+    cursor: pointer;
+}
+.button2{
+    background: var(--linear-gradient2);
+    color: var(--white);
+    border: none;
+    padding: 10px 15px;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.button2:hover{
+    transform: scale(1.05);
+}
+
+.button2:hover{
+    cursor: pointer;
+}
+
+.Container2{
+    display: flex;
+}
+.Container2 a{
+    margin: 0 15px;
+    color: var(--medium-gray);
+    transition: text-decoration 0.3s ease;
+    transition: text-decoration-color 0.3s ease;
+}
+.Container2 a:hover{
+     text-decoration: underline;
+     text-decoration-color: var(--teal-accent);
+     text-decoration-thickness: 3px;
+}
+
+.Container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+    height: 80px;
+    padding: 0 30px;
+    background-color: hsla(0, 0%, 100%, 0.8);
+    backdrop-filter: blur(20px);
+    
+}
+.Container1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+.Container1:hover{
+    cursor: pointer;
+}

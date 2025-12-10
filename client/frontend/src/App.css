@@ -1,0 +1,109 @@
+/* Buttons */
+.btn-primary {
+  background: #1e40af;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+}
+.btn-outline {
+  background: transparent;
+  color: #1e40af;
+  border: 2px solid #1e40af;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-left: 0.75rem;
+}
+.full-width {
+  width: 100%;
+}
+
+/* Header */
+.header {
+  background: white;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  padding: 1rem 0;
+}
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1e40af;
+}
+.nav a {
+  margin: 0 1rem;
+  font-weight: 500;
+}
+.auth-buttons a {
+  margin-left: 1rem;
+}
+
+/* Hero */
+.hero {
+  background: linear-gradient(135deg, #1e3a8a, #3b82f6);
+  color: white;
+  padding: 5rem 0;
+  text-align: center;
+}
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.hero p {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 0 auto 2rem;
+}
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+/* Footer */
+.footer {
+  background: #f9fafb;
+  padding: 3rem 0 2rem;
+  margin-top: 4rem;
+}
+.footer-content {
+  text-align: center;
+}
+.footer-logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1e40af;
+  margin-bottom: 1rem;
+}
+.footer-links {
+  margin: 1rem 0;
+}
+.footer-links a {
+  margin: 0 1rem;
+  color: #4b5563;
+}
+.copyright {
+  color: #6b7280;
+  font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-buttons, .header-content {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .btn-outline {
+    margin-left: 0;
+  }
+}
