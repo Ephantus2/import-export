@@ -239,6 +239,19 @@ const testimonials = [
             ))}
           </div>
         </section>
+        <section className={styles.section6}>
+          <h1>Ready to Transform Your Trade Operations?</h1>
+          <p>Join thousands of businesses already using TradeFlow to simplify their global trade.</p>
+          <div>
+            <button className={styles.lastButton1}>
+              Start Free Trial
+              <ArrowRight />
+              </button>
+              <button className={styles.lastButton2}>
+              Contact sales
+              </button>
+          </div>
+        </section>
 
     </div>
   )
