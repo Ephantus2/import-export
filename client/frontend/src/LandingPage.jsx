@@ -48,6 +48,27 @@ const LandingPage = () => {
   },
 ];
 
+const testimonials = [
+  {
+    quote: "TradeFlow transformed how we manage our international shipments. The tracking alone saved us countless hours.",
+    author: 'Sarah Chen',
+    role: 'Import Manager, TechGlobal Inc.',
+    avatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop',
+  },
+  {
+    quote: "The platform's ease of use and reliability made our expansion into new markets seamless.",
+    author: 'Michael Rodriguez',
+    role: 'CEO, Fresh Exports Co.',
+    avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop',
+  },
+  {
+    quote: "Best investment we made for our logistics operations. Customer support is exceptional.",
+    author: 'Emma Thompson',
+    role: 'Operations Director, Pacific Trade',
+    avatar: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop',
+  },
+];
+
   const stats = [
   { value: '150+', label: 'Countries' },
   { value: '50K+', label: 'Active Users' },
@@ -178,6 +199,43 @@ const LandingPage = () => {
                 <h3>{item.title}</h3>
                 <p className={styles.p12}>{item.description}</p>
               </div>
+            ))}
+          </div>
+        </section>
+        <section className={styles.section5}>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className={styles.testDiv}
+          >
+            <p className={styles.testTitle}>Testimonials</p>
+            <h2>
+              Trusted by Industry Leaders
+            </h2>
+          </motion.div>
+          <div className={styles.testCardDiv}>
+        {testimonials.map((testimonial, index) => (
+              <motion.div
+                key={testimonial.author}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.1 }}
+                className={styles.testCard}
+              >
+                <p>"{testimonial.quote}"</p>
+                <div className={styles.testCard2}>
+                  <img
+                    src={testimonial.avatar}
+                    alt={testimonial.author}
+                  />
+                  <div>
+                    <p className={styles.bold}>{testimonial.author}</p>
+                    <p className={styles.gray}>{testimonial.role}</p>
+                  </div>
+                </div>
+              </motion.div>
             ))}
           </div>
         </section>

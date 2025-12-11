@@ -308,3 +308,61 @@ rgb(255, 153, 0);
 .p12{
   color: var(--medium-gray);
 }
+
+/* section 5 */
+.section5{
+  padding: 100px 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 65px;
+}
+.testDiv{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.testTitle{
+  color: var(--teal-accent);
+  font-size: 1.2rem;
+}
+
+.testCard{
+  background-color: white;
+  border: 1px solid hsla(0, 0%, 50%, 0.1);
+  box-shadow: 3px 3px 5px hsla(0, 0%, 0%, 0.05), -3px -3px 5px hsla(0, 0%, 0%, 0.05);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 30px;
+  border-radius: 20px;
+}
+
+.testCard2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.testCardDiv{
+  display: flex;
+  gap: 15px;
+}
+
+.testCard2 img{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.bold{
+  font-weight: 500;
+}
+.gray{
+  color: var(--medium-gray);
+  font-size: 0.85rem;
+}
