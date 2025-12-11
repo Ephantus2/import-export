@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from './Header'
 import LandingPage from './LandingPage'
+import Footer from './Footer'
 
 
 const App = () => {
@@ -8,6 +9,7 @@ const App = () => {
     <>
     <Header />
     <LandingPage />
+    <Footer />
     </>
   )
 }

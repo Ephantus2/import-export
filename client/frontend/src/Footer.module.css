@@ -1,0 +1,143 @@
+:root{
+    --deep-navy: hsl(220, 49%, 21%);
+    --light-navy: rgb(30, 91, 121);
+    --linear-gradient: linear-gradient(135deg, #1E40AF, #3B82F6);
+    --linear-gradient2: linear-gradient(135deg, rgb(27, 44, 78), rgb(30, 91, 121));
+    --teal-accent: rgb(19, 194, 194);
+    --muted-teal: rgb(19, 194, 194, 0.3);
+    --orange-teal: 	
+rgb(255, 153, 0);
+  --sky-blue: rgb(59, 130, 246);
+  --gray-border: rgb(209, 213, 219);
+  --light-gray-bg: rgb(249, 250, 251);
+  --white: rgb(255, 255, 255);
+  --dark-charcoal: rgb(17, 24, 39);
+  --medium-gray: rgb(107, 114, 128);
+}
+
+.footer{
+    margin-top: 70px;
+    background-color: var(--deep-navy);
+    padding: 75px 40px 20px 40px;
+}
+.footerSection1{
+    border-bottom: 1px solid hsl(216, 12%, 34%);
+    display: flex;
+    padding-bottom: 40px;
+    
+}
+
+.footerSection11{
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.logo div{
+    background-color: var(--teal-accent);
+    padding: 4px 8px;
+    border-radius: 10px;
+}
+.ship2{
+    color: white;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 8px;
+}
+.logo p{
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.desc{
+    color: hsl(210, 20%, 68%);
+}
+
+.mail p, .phone p, .mappin p{
+    color: hsl(210, 20%, 68%);
+    font-size: 0.9rem;
+}
+
+.mail, .phone, .mappin{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 8px;
+}
+
+.iconsDiv{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.mailicon, .phoneIcon, .mappin{
+    color: hsl(210, 20%, 68%);
+
+}
+
+.linksDiv{
+    flex: 1;
+    display: flex;
+    align-items: start;
+    justify-content: space-evenly;
+}
+
+.links h1{
+  color: var(--light-gray-bg);
+  font-size: 1.2rem;
+}
+.links li{
+    color: hsl(210, 20%, 68%);
+    list-style-type: none;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+.links li:hover{
+    color: var(--light-gray-bg);
+}
+.links, .links ul{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.lastDiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+.lastDiv p{
+    color: hsl(210, 20%, 68%);
+}
+.lastDiv div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.socialIcons{
+    color: white;
+    width: 20px;
+    height: 20px;
+}
+
+.sociallinks{
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s ease;
+}
+.sociallinks:hover{
+    background-color: hsla(0, 0%, 100%,0.2);
+}
