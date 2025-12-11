@@ -80,7 +80,12 @@ const Footer = () => {
               <h1>Company</h1>
               <ul>
                 {footerLinks.company.map((link) => (
-                  <li key={link.name}>{link.name}</li>
+                  <li key={link.name}>
+                    <Link
+                    to={link.path}>
+                    {link.name}
+                  </Link>
+                  </li>
                 ))}
               </ul>
             </div>
@@ -89,7 +94,12 @@ const Footer = () => {
               <h1>Services</h1>
               <ul>
                 {footerLinks.services.map((link) => (
-                  <li key={link.name}>{link.name}</li>
+                  <li key={link.name}>
+                    <Link
+                    to={link.path}>
+                    {link.name}
+                  </Link>
+                  </li>
                 ))}
               </ul>
             </div>
@@ -98,7 +108,12 @@ const Footer = () => {
               <h1>Support</h1>
               <ul>
                 {footerLinks.support.map((link) => (
-                  <li key={link.name}>{link.name}</li>
+                  <li key={link.name}>
+                    <Link
+                    to={link.path}>
+                    {link.name}
+                  </Link>
+                  </li>
                 ))}
               </ul>
             </div>
@@ -107,7 +122,12 @@ const Footer = () => {
               <h1>Legal</h1>
               <ul>
                 {footerLinks.legal.map((link) => (
-                  <li key={link.name}>{link.name}</li>
+                  <li key={link.name}>
+                    <Link
+                    to={link.path}>
+                    {link.name}
+                  </Link>
+                  </li>
                 ))}
               </ul>
             </div>
