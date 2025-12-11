@@ -1,0 +1,47 @@
+:root{
+    --deep-navy: hsl(220, 49%, 21%);
+    --light-navy: rgb(30, 91, 121);
+    --linear-gradient: linear-gradient(135deg, #1E40AF, #3B82F6);
+    --linear-gradient2: linear-gradient(135deg, rgb(27, 44, 78), rgb(30, 91, 121));
+    --teal-accent: rgb(19, 194, 194);
+    --muted-teal: rgb(19, 194, 194, 0.3);
+    --orange-teal: 	
+rgb(255, 153, 0);
+  --sky-blue: rgb(59, 130, 246);
+  --gray-border: rgb(209, 213, 219);
+  --light-gray-bg: rgb(249, 250, 251);
+  --white: rgb(255, 255, 255);
+  --dark-charcoal: rgb(17, 24, 39);
+  --medium-gray: rgb(107, 114, 128);
+}
+.container{
+    position: relative;
+    top: 80px;
+}
+.section1{
+    background-color: hsla(226, 71%, 40%, 0.1);
+    padding: 110px;
+
+}
+.motion1{
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+}
+
+.motion1p1{
+    color: var(--teal-accent);
+}
+
+.motion1 h1{
+    font-size: 3.2rem;
+}
+
+.motion1p2{
+    font-size: 1.1rem;
+    color: var(--medium-gray);
+    max-width: 800px;
+    text-align: center;
+}

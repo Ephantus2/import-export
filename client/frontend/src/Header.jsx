@@ -14,6 +14,7 @@ import {
   Users,
   HelpCircle,
 } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   return (
@@ -23,8 +24,8 @@ const Header = () => {
             <h2>TradeFlow</h2>
         </div>
         <div className={styles.Container2}>
-            <a>Home</a>
-            <a>About</a>
+            <Link to={'/'}>Home</Link>
+            <Link to={'about/'}>About</Link>
             <a>Blogs</a>
             <a>Contacts</a>
         </div>
