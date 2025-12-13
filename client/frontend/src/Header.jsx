@@ -30,8 +30,16 @@ const Header = () => {
             <a>Contacts</a>
         </div>
         <div className={styles.Container3}>
-            <button className={styles.button1}><a>login</a></button>
-            <button className={styles.button2}>Get Started</button>
+            <button className={styles.button1}>
+              <Link to={'auth/user/login/'}>
+              login
+              </Link>
+            </button>
+            <button className={styles.button2}>
+              <Link to={'auth/user/login/'}>
+              Get Started
+              </Link>
+            </button>
         </div>
     </div>
   )

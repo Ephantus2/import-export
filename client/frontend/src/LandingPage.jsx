@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./LandingPage.module.css";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import {
   Ship,
   Globe,
@@ -276,8 +277,10 @@ const LandingPage = () => {
         </p>
         <div>
           <button className={styles.lastButton1}>
-            Start Free Trial
+            
+              Start Free Trial
             <ArrowRight />
+            
           </button>
           <button className={styles.lastButton2}>Contact sales</button>
         </div>

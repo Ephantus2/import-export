@@ -1,0 +1,182 @@
+
+:root{
+    --deep-navy: rgb(27, 44, 78);
+    --light-navy: rgb(30, 91, 121);
+    --linear-gradient: linear-gradient(135deg, #1E40AF, #3B82F6);
+    --linear-gradient2: linear-gradient(135deg, rgb(27, 44, 78), rgb(30, 91, 121));
+    --teal-accent: rgb(19, 194, 194);
+    --muted-teal: rgb(19, 194, 194, 0.3);
+    --orange-teal: 	
+hsl(36, 100%, 45%);
+  --sky-blue: rgb(59, 130, 246);
+  --gray-border: rgb(209, 213, 219);
+  --light-gray-bg: rgb(249, 250, 251);
+  --white: rgb(255, 255, 255);
+  --dark-charcoal: rgb(17, 24, 39);
+  --medium-gray: rgb(107, 114, 128);
+}
+.container{
+    display: flex;
+    width: 100%;
+    height: 630px;
+}
+
+.block{
+    flex: 1;
+    position: relative;
+}
+
+.absolute2{
+    position: absolute;
+    top: 40%;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 50;
+    color: white;
+}
+
+.overlay{
+    background-color: hsla(226, 91%, 20%, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.texts{
+
+    padding: 30px;
+}
+.texts h2{
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.texts p{
+    text-align: center;
+    color: var(--light-gray-bg);
+    margin-top: 20px;
+    max-width: 480px;
+}
+
+.free{
+    color: var(--teal-accent);
+}
+.free:hover{
+    text-decoration: underline;
+}
+.block img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.div2{
+    flex: 1;
+    
+}
+
+.motion{
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    height: 100%;
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.ship{
+    color: white;
+}
+.home div{
+    background: var(--linear-gradient2);
+    padding: 5px 8px;
+    border-radius: 10px;
+}
+.home span{
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+input{
+    height: 40px;
+    border: 1px solid hsla(0, 0%, 50%, 0.3);
+    border-radius: 10px;
+    display: block;
+    width: 100%;
+    margin: 4px 0 20px 0;
+    padding: 0 10px;
+}
+
+.password::placeholder{
+    font-size: 1.8rem;
+}
+
+form button{
+    background: var(--linear-gradient2);
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    display: block;
+    width: 100%;
+    margin: 20px 0;
+    transition: transform 0.3s ease;
+}
+
+form button:hover{
+    cursor: pointer;
+    transform: scale(1.03);
+}
+.label2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.forgot{
+    color: var(--teal-accent);
+}
+
+.border{
+    border-bottom: 1px solid hsla(0, 0%, 50%, 0.3);
+}
+.border1{
+    position: relative;
+}
+.border1 p{
+    position: absolute;
+    text-align: center;
+    top: -13px;
+    left: 35%;
+    z-index: 2;
+    background-color: white;
+    padding: 0 4px;
+    color: var(--medium-gray);
+}
+
+.buttonDiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 30px;
+    gap: 15px;
+}
+.buttonDiv button{
+    padding: 10px 60px;
+    border-radius: 20px;
+    border: 1px solid hsla(0, 0%, 50%, 0.3);
+    transition: background-color 0.3s ease;
+    flex: 1;
+    background-color: transparent;
+}
+.buttonDiv button:hover{
+    background-color: var(--orange-teal);
+}
