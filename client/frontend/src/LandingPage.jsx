@@ -112,10 +112,14 @@ const LandingPage = () => {
               </p>
             </div>
             <div className={styles.buttonDiv}>
+              <Link to={'/auth/user/login/'}>
               <button className={styles.button1}>
                 Start free Trial <ArrowRight />
               </button>
+              </Link>
+              <Link to={'/about/'}>
               <button className={styles.button2}>Learn More</button>
+              </Link>
             </div>
             <div className={styles.checkDiv}>
               {[1, 2, 3, 4, 5].map((i) => (
@@ -276,13 +280,15 @@ const LandingPage = () => {
           global trade.
         </p>
         <div>
+          <Link to={'/auth/user/signup/'}>
           <button className={styles.lastButton1}>
-            
               Start Free Trial
             <ArrowRight />
-            
           </button>
+          </Link>
+          <Link to={'/contact/'}>
           <button className={styles.lastButton2}>Contact sales</button>
+          </Link>
         </div>
       </section>
     </div>

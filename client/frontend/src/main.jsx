@@ -7,6 +7,7 @@ import LandingPage from './LandingPage.jsx'
 import About from './About.jsx'
 import Loginpage from './Loginpage.jsx'
 import AuthLayout from './AuthLayout.jsx'
+import Registerpage from './Registerpage.jsx'
 
 const routers = createBrowserRouter([
   {
@@ -19,7 +20,8 @@ const routers = createBrowserRouter([
   },{
     element: <AuthLayout />,
     children: [
-        {path: 'auth/user/login/', element: <Loginpage />}
+        {path: 'auth/user/login/', element: <Loginpage />},
+        {path: 'auth/user/signup/', element: <Registerpage />}
     ]
   }
 ])

@@ -45,7 +45,7 @@ const Loginpage = () => {
           </h1>
           <p>
             Don't have an account?{' '}
-            <Link to="/signup" className={styles.free}>
+            <Link to="/auth/user/signup/" replace={true} className={styles.free}>
               Sign up for free
             </Link>
           </p>
@@ -54,7 +54,7 @@ const Loginpage = () => {
             <input id='Email' placeholder='you@company.com' />
             <label className={styles.label2} for="password"><span>Password </span><span className={styles.forgot}>forgot password?</span></label>
             <input className={styles.password} type='password' placeholder='......' />
-            <button type='submit'>Sign In</button>
+            <button className={styles.submit} type='submit'>Sign In</button>
           </form>
           <div>
             <div className={styles.border1}>
