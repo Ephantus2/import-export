@@ -55,7 +55,7 @@ const Registerpage = () => {
               </div>
             </div>
             <label for="email">Email</label>
-            <input id="Email" placeholder="you@company.com" />
+            <input className={styles.password} id="Email" placeholder="you@company.com" />
             <label className={styles.label2} for="password">
               <span>Password </span>
               <span className={styles.forgot}>forgot password?</span>

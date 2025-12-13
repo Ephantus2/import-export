@@ -26,8 +26,8 @@ const Header = () => {
         <div className={styles.Container2}>
             <Link to={'/'}>Home</Link>
             <Link to={'about/'}>About</Link>
-            <a>Blogs</a>
-            <a>Contacts</a>
+            <Link>Blogs</Link>
+            <Link to={'contact/'}>Contacts</Link>
         </div>
         <div className={styles.Container3}>
             <button className={styles.button1}>

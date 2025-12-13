@@ -8,6 +8,7 @@ import About from './About.jsx'
 import Loginpage from './Loginpage.jsx'
 import AuthLayout from './AuthLayout.jsx'
 import Registerpage from './Registerpage.jsx'
+import ContactPage from './ContactPage.jsx'
 
 const routers = createBrowserRouter([
   {
@@ -15,6 +16,7 @@ const routers = createBrowserRouter([
     children: [
       {path: '/', element: <LandingPage />},
       {path: 'about/', element: <About />},
+      {path: 'contact/', element: <ContactPage />}
       
     ]
   },{

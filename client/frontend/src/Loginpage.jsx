@@ -51,7 +51,7 @@ const Loginpage = () => {
           </p>
           <form>
             <label for="email">Email</label>
-            <input id='Email' placeholder='you@company.com' />
+            <input className={styles.input} id='Email' placeholder='you@company.com' />
             <label className={styles.label2} for="password"><span>Password </span><span className={styles.forgot}>forgot password?</span></label>
             <input className={styles.password} type='password' placeholder='......' />
             <button className={styles.submit} type='submit'>Sign In</button>
