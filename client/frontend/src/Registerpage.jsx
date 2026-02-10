@@ -38,7 +38,7 @@ const Registerpage = () => {
           </p>
           <form>
              <div>
-              <p className="mb-3 block">Select your role</p>
+              <p>Select your role</p>
               <div className={styles.roles}>
                 {roles.map((role) => (
                   <button
@@ -47,20 +47,46 @@ const Registerpage = () => {
                     className={styles.b}
                   >
                     <div className={styles.flex}>
-                      <span>{role.label}</span>
+                      <span className={styles.label}>{role.label}</span>
                     </div>
-                    <span>{role.description}</span>
+                    <span className={styles.description}>{role.description}</span>
                   </button>
                 ))}
               </div>
             </div>
+            <label for="name">Full Name</label>
+            <input className={styles.input} id="name" placeholder="Full Name" />
             <label for="email">Email</label>
-            <input className={styles.password} id="Email" placeholder="you@company.com" />
+            <input className={styles.input} id="Email" placeholder="you@company.com" />
+            <div className={styles.inline}>
+              <div>
+                <label for="phone">Phone Number</label>
+            <input className={styles.phone} id="phone" placeholder="+254 700 000000" />
+              </div>
+              <div>
+                <label for="name">Gender</label>
+            <select className={styles.gender} id="gender" placeholder="select gender">
+              <option>Male</option>
+              <option>Female</option>
+            </select>
+              </div>
+            
+            
+            </div>
             <label className={styles.label2} for="password">
               <span>Password </span>
               <span className={styles.forgot}>forgot password?</span>
             </label>
             <input
+              className={styles.password}
+              type="password"
+              placeholder="......"
+            />
+                 <label for="password2">
+              confirm password
+            </label>
+            <input
+              id="password2"
               className={styles.password}
               type="password"
               placeholder="......"

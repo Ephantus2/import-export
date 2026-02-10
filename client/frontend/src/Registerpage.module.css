@@ -105,6 +105,21 @@ hsl(36, 100%, 45%);
     font-weight: 600;
 }
 
+.inline{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.inline input, .inline select{
+     height: 40px;
+    border: 1px solid hsla(0, 0%, 50%, 0.3);
+    border-radius: 10px;
+    width: 100%;
+    margin: 4px 0 20px 0;
+    padding: 0 10px;
+}
+
 .password, .input{
     height: 40px;
     border: 1px solid hsla(0, 0%, 50%, 0.3);
@@ -183,16 +198,36 @@ hsl(36, 100%, 45%);
 .roles{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 3px;
+    gap: 15px;
 }
 .flex{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+.roles{
+    margin: 6px 0;
+}
 
 .b{
     padding: 15px 10px;
     border-radius: 10px;
     background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    border: 2px solid hsla(0, 0%, 50%, 0.3);
+}
+.b:hover{
+    cursor: pointer;
+    border-color: var(--muted-teal);
+}
+
+.label{
+    font-weight: 600;
+}
+
+.description{
+    color: var(--medium-gray);
 }

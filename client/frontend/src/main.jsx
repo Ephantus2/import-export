@@ -9,14 +9,22 @@ import Loginpage from './Loginpage.jsx'
 import AuthLayout from './AuthLayout.jsx'
 import Registerpage from './Registerpage.jsx'
 import ContactPage from './ContactPage.jsx'
+import ProtectedPages from './Protected/protected.jsx'
+import BlogsPage from './BlogsPage.jsx'
 
 const routers = createBrowserRouter([
   {
-    element: <App />,
+    element: (
+      <ProtectedPages>
+          <App />
+      </ProtectedPages>
+  
+  ),
     children: [
       {path: '/', element: <LandingPage />},
       {path: 'about/', element: <About />},
-      {path: 'contact/', element: <ContactPage />}
+      {path: 'contact/', element: <ContactPage />},
+      {path: 'blogs/', element: <BlogsPage />}
       
     ]
   },{

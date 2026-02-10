@@ -19,14 +19,16 @@ import { Link } from 'react-router-dom';
 const Header = () => {
   return (
     <div className={styles.Container}>
+      <Link>
         <div className={styles.Container1}>
             <Ship className={styles.shipIcon}/>
             <h2>TradeFlow</h2>
         </div>
+        </Link>
         <div className={styles.Container2}>
             <Link to={'/'}>Home</Link>
             <Link to={'about/'}>About</Link>
-            <Link>Blogs</Link>
+            <Link to={'blogs/'}>Blogs</Link>
             <Link to={'contact/'}>Contacts</Link>
         </div>
         <div className={styles.Container3}>
